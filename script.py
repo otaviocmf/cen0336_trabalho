@@ -28,5 +28,8 @@ for inseto in insetos_cana_de_acucar:
                 print("Controle Biológico:", inseto['Controle Biológico'])
                 print("Controle Cultural:", inseto['Controle Cultural'])
 
-            elif input_numero < inseto['C']:
+            elif input_numero < inseto['C']: # adicionar nivel de controle da praga
                 print("O número de indivíduos está abaixo do nível de controle.")
+        else:
+            print("Este inseto não é uma praga. Confira alguns dos benefícios que a presença desse inseto pode trazer:")
+            print(inseto["Beneficios"])
