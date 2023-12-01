@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Pragas</title>
+    <style>
+        body {
+            text-align: center; /* Centraliza o texto na página */
+            padding-top: 50px; /* Adiciona espaço para o banner na parte superior */
+        }
+    </style>
+</head>
+<body>
+    <!-- Adicione seu banner aqui -->
+    <div id="banner">
+        <!-- Conteúdo do banner -->
+    </div>
+
+    <h1>Controle de Pragas</h1>
+    <form method="post" action="/">
+        <label for="input_nome">Nome Científico do Inseto:</label>
+        <select name="input_nome" id="input_nome" required>
+            <option value="Atta capiguara">Atta capiguara</option>
+            <option value="Bolax flavolineatus">Bolax flavolineatus</option>
+            <option value="Castnia licus">Castnia licus</option>
+            <!-- Adicione mais opções conforme necessário -->
+        </select>
+        <br>
+
+        <label for="input_numero">Número de Indivíduos:</label>
+        <input type="number" name="input_numero" id="input_numero" required min="0">
+        <br>
+        <button type="submit">Verificar Controle</button>
+    </form>
+</body>
+</html>
